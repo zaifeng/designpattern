@@ -6,7 +6,7 @@ import (
 )
 
 func TestBuilder(t *testing.T) {
-	builder := NewCarManufacturer(NewSportsCarBuilder())
+	builder := NewCarDirector(NewSportsCarBuilder())
 	car := builder.Construct()
 	log.Printf("%v %v %v\b", car.brand, car.color, car.engineVolume)
 }
